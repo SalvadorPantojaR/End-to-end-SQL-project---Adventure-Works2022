@@ -200,4 +200,5 @@ FROM #CategorySales
 ORDER BY Revenue DESC;
 
 -- Clean up
-DROP TABLE #CategorySales;
+DROP TABLE #CategorySales; 
+

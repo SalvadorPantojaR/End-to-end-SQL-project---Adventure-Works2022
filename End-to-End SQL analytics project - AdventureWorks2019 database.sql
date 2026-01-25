@@ -202,3 +202,4 @@ ORDER BY Revenue DESC;
 -- Clean up
 DROP TABLE #CategorySales; 
 
+

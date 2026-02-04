@@ -16,7 +16,7 @@ BEGIN
     WHERE ProductID = @ProductID;
 
     SET @Margin = CASE WHEN @Price > 0 
-                       THEN ((@Price - @Cost) / @Price) * 100 
+                       THEN ((@Price - @Cost) / @Price) * 100
                        ELSE 0 END;
 
     RETURN @Margin;
@@ -201,6 +201,7 @@ ORDER BY Revenue DESC;
 
 -- Clean up
 DROP TABLE #CategorySales; 
+
 
 
 

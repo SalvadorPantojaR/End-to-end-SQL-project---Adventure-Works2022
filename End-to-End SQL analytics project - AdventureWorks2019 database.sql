@@ -10,7 +10,7 @@ BEGIN
     DECLARE @Cost MONEY, @Price MONEY, @Margin DECIMAL(10,2);
 
     SELECT 
-        @Cost = StandardCost, 
+        @Cost = StandardCost,
         @Price = ListPrice
     FROM Production.Product
     WHERE ProductID = @ProductID;
@@ -201,6 +201,7 @@ ORDER BY Revenue DESC;
 
 -- Clean up
 DROP TABLE #CategorySales; 
+
 
 
 
